@@ -195,6 +195,7 @@
     resize: none;
     border: none;
     border-radius: 5px;
+
 }
 
 .ContactForm ul{
@@ -227,12 +228,14 @@
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    float:right;
     cursor: pointer;
     transition: all 0.2s;
+    float:right;
 }
 
-.clearfix{
+.clearfix::after{
+    content: "";
+    display: table;
     clear: both;
 }
 
@@ -260,7 +263,7 @@ textarea, .text:focus{
     width:171px ;
     height: 36px;
     background: url(images/footerLogo.png);
-    indent:101%;
+    text-indent:101%;
     overflow: hidden;
     white-space: nowrap;
 }
